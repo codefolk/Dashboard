@@ -29,6 +29,17 @@ body {
     min-width:100%;
 
 }
+.background{
+    align-self:flex-end;
+    width:50%;
+    background-color:var(--lightGraishBlue);
+    background-position: right top;
+    height:400px;
+    z-index: -100;
+    position: absolute;
+    margin-left: auto;
+    border-radius:0 0 0 40px;
+}
 .header {
     width: 100%;
     display: flex;
@@ -102,8 +113,8 @@ body {
 }
 
 #illustartion-img {
-    max-width: 70%;
-    margin: 1rem 0 1rem 30%;
+    max-width: 100%;
+    margin: 2rem 0 3rem 0;
 }
 .flex-headings {
     display: flex;
@@ -196,7 +207,7 @@ body {
 
 @media (min-width:768px) {
     body {
-        width: 100vw;
+        max-width: 100vw;
         height: 100vh;
     }
 
@@ -205,25 +216,29 @@ body {
     }
 
     .header-logo {
-        top: 1.5rem;
-        left: 4rem;
+        top: 0.65rem;
         position: absolute;
+        margin-bottom: 1.5rem;
     }
 
     .navigation-links {
         width: max-content;
-        margin: 0;
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         top: -5px;
         flex-direction: row;
         position: relative;
-        margin: 1rem 5rem 1rem auto;
+        margin: 1.5rem 2% 0 auto;
         box-shadow: none;
+        background-color: transparent;
     }
-
+    .background{
+        width:50%;
+        max-height:50%;
+    }
     .nav-btn {
         width: 100%;
+        margin:0 0 1.5rem 0;
     }
 
     .navigation-links hr {
@@ -250,7 +265,8 @@ body {
             "typos image";
     }
     .flex-headings h1{
-        margin-right: 25%;
+        justify-self:center;
+        margin-right: 20%;
     }
     #illustartion-img{
         grid-area: image;
@@ -268,12 +284,12 @@ body {
     .column-view h2 {
         margin: 1rem auto 1rem 1rem;
         font-size: 3rem;
-        /* width: 20ch; */
+        width: 20ch;
     }
 
     .column-view p {
         max-width: 27ch;
-        margin: 1rem auto 1rem 1rem;
+        margin: 1rem;
     }
 
     #simple-button {
@@ -295,7 +311,7 @@ body {
     }
 
     #simple-button {
-        margin: 1rem auto 1rem 5rem;
+        margin: 1rem 2rem 1rem 5rem;
     }
 
     #demo-button {
@@ -309,5 +325,11 @@ body {
         margin: 1rem 0 1rem auto;
         min-width: 500px;
 
+    }
+    .navigation-links{
+        gap:2rem;
+    }
+    .header-logo{
+        margin-left: 5rem;
     }
 }
