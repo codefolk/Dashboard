@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     min-width:100%;
-
+    overflow-x: hidden;
 }
 .background{
     align-self:flex-end;
@@ -114,7 +114,7 @@ body {
 
 #illustartion-img {
     max-width: 100%;
-    margin: 2rem 0 3rem 0;
+    margin: 2rem 0 3rem 6rem;
 }
 .flex-headings {
     display: flex;
@@ -270,7 +270,7 @@ body {
     }
     #illustartion-img{
         grid-area: image;
-        margin: 1rem 0 1rem auto;
+        margin: 1rem 0 1rem 15rem;
         width: 100%;
 
     }
@@ -301,6 +301,9 @@ body {
     }
 }
 @media (min-width: 1024px) {
+    body{
+        overflow: hidden;
+    }
     .column-view h2 {
         width: 20ch;
         margin: 1rem auto 1rem 5rem;
@@ -322,9 +325,9 @@ body {
     }
     #illustartion-img{
         grid-area: image;
-        margin: 1rem 0 1rem auto;
+        margin: 1rem 0 1rem 10rem;
         min-width: 500px;
-
+        overflow: hidden;
     }
     .navigation-links{
         gap:2rem;
